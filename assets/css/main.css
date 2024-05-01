@@ -15,16 +15,11 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+	font: inherit;}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-
-body {
-	line-height: 1;
-}
 
 ol, ul {
 	list-style: none;
@@ -69,10 +64,6 @@ input, select, textarea {
 
 	@-ms-viewport {
 		width: device-width;
-	}
-
-	body {
-		-ms-overflow-style: scrollbar;
 	}
 
 	@media screen and (max-width: 360px) {
@@ -4145,15 +4136,45 @@ input, select, textarea {
 	.justified-text {
 		text-align: justify;
 		margin: 20px;
-		padding-left: 100px;
+		padding-left: 200px;
+		padding-right: 200px;
 	  }
 	
 	h1 {
 		margin: 20px;
-		padding-left: 100px;
-		text-align: right;
+		padding-top: 200px;
+		text-align: center;
 	  }
 
 	img {
-		margin: 40px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	body 
+	{
+		background-color: #4696e5;
+		color: #d1e5f9;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+		background-position: top left, center center;
+		background-attachment: fixed, fixed;
+		background-size: auto, cover;
+		height: 100vh;
+		min-height: 35em;
+	}
+
+	span 
+	{
+		font-size: 50px;
+		display: block;
+		text-align: center;
 	}
